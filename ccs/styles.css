@@ -759,6 +759,14 @@ textarea:focus {
     display: inline;
 }
 
+.terms {
+    color: #757575;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
 .send-botton {
     display: flex;
     justify-content: center;
