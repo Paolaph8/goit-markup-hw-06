@@ -438,6 +438,68 @@ footer p {
     color: var(--blue)
 }
 
+.footer-submit {
+    margin-top: 0px;
+    margin-left: 93px;
+
+
+}
+
+.footer-submit-text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--white);
+    height: 25px;
+}
+
+.footer-submit-input {
+    width: 358px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: var(--brand-dark-blue);
+    color: var(--white);
+}
+
+.footer-submit-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-submit-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 0 auto;
+    padding: 8px 29px;
+    border-radius: 4px;
+    background-color: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    min-height: 43px;
+    margin-left: 12px;
+}
+
+.send-icon {
+    background-color: var(--blue);
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+
+
 /* Portafolio */
 .portafolio-button {
     margin-top: 106px;
@@ -501,8 +563,6 @@ footer p {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .card-image {
     overflow: hidden;
     position: relative;
@@ -552,10 +612,11 @@ footer p {
     padding: 8px;
     display: flex;
     justify-content: flex-end;
+
 }
 
-
 .close-btn {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -565,4 +626,159 @@ footer p {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.modal-tite {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.form {
+    width: 528px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.top-title {
+    margin-top: 12px;
+}
+
+.user-information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.label-modal,
+.comment-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+}
+
+.input-modal {
+    display: block;
+    outline: none;
+    width: 100%;
+    margin: 0;
+    padding: 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-modal:hover,
+.input-modal:focus {
+    outline: none;
+    border-color: var(--blue);
+}
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(25%);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.input-modal:hover+.modal-icon,
+.input-modal:focus+.modal-icon {
+    fill: var(--blue);
+}
+
+textarea {
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    height: 120px;
+    width: 100%;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+}
+
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+}
+
+.form-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0, 5);
+}
+
+.custom-checkmark-label {
+    display: block;
+    padding-left: 20px;
+}
+
+.custom-checkmark {
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+
+.custom-checkmark-icon {
+    position: absolute;
+    display: none;
+    align-items: center;
+    fill: #FFFFFF;
+    width: 11px;
+    height: 8px;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+.custom-checkmark-label input[type="checkbox"]:checked+.custom-checkmark {
+    background: #2196F3;
+    border: none;
+}
+
+.custom-checkmark-label input[type="checkbox"]:checked+.custom-checkmark .custom-checkmark-icon {
+    display: inline;
+}
+
+.send-botton {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 56px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--blue);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-botton:hover,
+.send-botton:focus {
+    background-color: #188CE8;
 }
